@@ -1,0 +1,30 @@
+{
+  "name": "sass-intro",
+  "version": "1.0.0",
+  "description": "An intro to sass features",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bgeninatti/intro-to-sass.git"
+  },
+  "keywords": [
+    "sass",
+    "intro",
+    "thinkersys",
+    "drink",
+    "&",
+    "learn"
+  ],
+  "author": "Bruno Geninatti",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/Bgeninatti/intro-to-sass/issues"
+  },
+  "homepage": "https://github.com/Bgeninatti/intro-to-sass#readme",
+  "dependencies": {
+    "bower": "^1.8.4"
+  }
+}
