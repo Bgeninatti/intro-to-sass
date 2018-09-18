@@ -1,0 +1,7 @@
+@import "variables";
+
+@for $i from 1 through 7 {
+  .font-size-#{$i} {
+    font-size: $min-font-size + $i * 2px;
+  }
+}

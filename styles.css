@@ -8690,6 +8690,34 @@ h3 {
     border-color: #dee2e6;
   }
 }
+.font-size-1 {
+  font-size: 12px;
+}
+
+.font-size-2 {
+  font-size: 14px;
+}
+
+.font-size-3 {
+  font-size: 16px;
+}
+
+.font-size-4 {
+  font-size: 18px;
+}
+
+.font-size-5 {
+  font-size: 20px;
+}
+
+.font-size-6, .listPage .header .title {
+  font-size: 22px;
+}
+
+.font-size-7 {
+  font-size: 24px;
+}
+
 .btn-custom-blue, .btn-custom {
   padding: 0.5em 2em;
 }
@@ -8713,7 +8741,6 @@ h3 {
 
 .listPage .header .title {
   color: #2699FB;
-  font-size: 21px;
   font-weight: bold;
 }
 .jsgrid {
