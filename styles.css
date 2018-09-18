@@ -1,5 +1,8 @@
-.btn-custom {
+.btn-custom-blue, .btn-custom {
   padding: 0.5em 2em;
+}
+
+.btn-custom {
   border: 2px solid #2699FB;
   background-color: white;
   color: #2699FB;
@@ -7,6 +10,13 @@
 .btn-custom:hover {
   background-color: #2699FB;
   color: white;
+}
+.btn-custom-blue {
+  background-color: #2699FB;
+  color: white;
+}
+.btn-custom-blue:hover {
+  background-color: #BCE0FD;
 }
 
 .listPage .header .title {
