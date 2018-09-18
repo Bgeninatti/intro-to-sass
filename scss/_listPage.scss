@@ -1,9 +1,19 @@
 .listPage {
+  @extend .container;
   .header {
+    @extend .row;
+    @extend .mt-3;
     .title {
       color: $color-1;
       font-size: $font-size-1;
       font-weight: bold;
     }
+  }
+  .body {
+    @extend .row;
+  }
+  .footer {
+    @extend .row;
+    @extend .mt-3;
   }
 }

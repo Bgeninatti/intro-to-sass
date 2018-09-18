@@ -5,6 +5,7 @@
 
 
 .btn-custom {
+  @extend .btn;
   @extend %btn-sm;
   @include borders-1();
   background-color: white;
@@ -14,6 +15,7 @@
     color: white;
   }
   &-blue {
+    @extend .btn;
     @extend %btn-sm;
     background-color: $color-1;
     color: white;
