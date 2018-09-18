@@ -1,0 +1,10 @@
+.btn-custom {
+  padding: .5em 2em;
+  border: 2px solid $color-1;
+  background-color: white;
+  color: $color-1;
+  &:hover {
+    background-color: $color-1;
+    color: white;
+  }
+}
