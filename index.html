@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="bower_components/jsgrid/css/jsgrid.css" />
     <link rel="stylesheet" type="text/css" href="bower_components/jsgrid/css/theme.css" />
 
+    <link rel="stylesheet" type="text/css" href="styles.css" />
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
 
     <script src="bower_components/jsgrid/src/jsgrid.core.js"></script>
@@ -23,16 +24,15 @@
     <script src="bower_components/jsgrid/src/fields/jsgrid.field.control.js"></script>
 </head>
 <body>
-    <div class="container">
-      <div class="row mt-3">
-      
-        <h1>Basic Scenario</h1>
+    <div class="container listPage">
+      <div class="row mt-3 header">
+          <h1 class="title">Basic Scenario</h1>
       </div>
-      <div class="row">
+      <div class="row body">
       
         <div id="jsGrid"></div>
       </div>
-      <div class="row mt-3">
+      <div class="row mt-3 footer">
         <button class="btn btn-primary">Cancel</button>
         <button class="btn btn-primary ml-2">Save</button>
         <button class="btn btn-primary ml-2">Delete</button>
