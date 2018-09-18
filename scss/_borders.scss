@@ -1,0 +1,5 @@
+@each $name, $color, $size in $borders {
+  .border-#{$name} {
+    @include border($color, $size);
+  }
+}

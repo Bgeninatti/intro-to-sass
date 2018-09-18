@@ -7,7 +7,7 @@
 .btn-custom {
   @extend .btn;
   @extend %btn-sm;
-  @include borders-1();
+  @include border($color-1, 2px);
   background-color: white;
   color: $color-1;
   &:hover {
@@ -24,3 +24,4 @@
     }
   }
 }
+
