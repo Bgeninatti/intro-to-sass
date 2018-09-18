@@ -2,4 +2,10 @@
   .border-#{$name} {
     @include border($color, $size);
   }
+  @each $position in (top, right, bottom, left) {
+    $sufix: str-slice($position, 0, 1);
+    .border-#{$name}-#{$sufix} {
+      @include border($color, $size, $position);
+    }
+  }
 }

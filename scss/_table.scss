@@ -1,0 +1,45 @@
+.jsgrid {
+  @include border($color-1, 2px);
+  * {
+    color: $color-1;
+  } 
+  font-size: 1rem !important;
+  height: 100% !important;
+  .jsgrid-grid-header,
+  .jsgrid-grid-body {
+    overflow: hidden !important;
+    .jsgrid-table {
+      margin-bottom: 0;
+    }
+  } 
+}   
+
+
+.jsgrid-table {
+  @extend .table;
+  th {
+    padding: 0.75rem 0 !important;
+  }
+  .jsgrid-header-row {
+    @include border($color-1, 2px, 'bottom');
+    text-align: center;
+    .jsgrid-header-cell {
+      border: none;
+      background-color: white;
+    }
+  }
+  .jsgrid-row.checked,
+  .jsgrid-alt-row.checked {
+    background-color: $color-2;
+  } 
+  .jsgrid-cell {
+    border: none;
+    text-align: left;
+    border-top: 1px solid $color-2;
+    &.cell-centered {
+        text-align: center !important;
+    }
+  }
+}
+
+

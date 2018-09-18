@@ -1,3 +1,7 @@
-@mixin border($color, $size) {
-  border: $size solid $color;
+@mixin border($color, $size, $position:null) {
+  @if ($position) {
+    border-#{$position}: $size solid $color;
+  } @else {
+    border: $size solid $color;
+  }
 }

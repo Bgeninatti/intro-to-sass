@@ -1504,25 +1504,26 @@ pre code {
     margin-left: 91.6666666667%;
   }
 }
-.table {
+.table, .jsgrid-table {
   width: 100%;
   margin-bottom: 1rem;
   background-color: transparent;
 }
-.table th,
-.table td {
+.table th, .jsgrid-table th,
+.table td,
+.jsgrid-table td {
   padding: 0.75rem;
   vertical-align: top;
   border-top: 1px solid #dee2e6;
 }
-.table thead th {
+.table thead th, .jsgrid-table thead th {
   vertical-align: bottom;
   border-bottom: 2px solid #dee2e6;
 }
-.table tbody + tbody {
+.table tbody + tbody, .jsgrid-table tbody + tbody {
   border-top: 2px solid #dee2e6;
 }
-.table .table {
+.table .table, .jsgrid-table .table, .table .jsgrid-table, .jsgrid-table .jsgrid-table {
   background-color: #fff;
 }
 
@@ -1684,12 +1685,12 @@ pre code {
   background-color: rgba(0, 0, 0, 0.075);
 }
 
-.table .thead-dark th {
+.table .thead-dark th, .jsgrid-table .thead-dark th {
   color: #fff;
   background-color: #212529;
   border-color: #32383e;
 }
-.table .thead-light th {
+.table .thead-light th, .jsgrid-table .thead-light th {
   color: #495057;
   background-color: #e9ecef;
   border-color: #dee2e6;
@@ -8660,11 +8661,12 @@ h3 {
     border: 1px solid #000;
   }
 
-  .table {
+  .table, .jsgrid-table {
     border-collapse: collapse !important;
   }
-  .table td,
-.table th {
+  .table td, .jsgrid-table td,
+.table th,
+.jsgrid-table th {
     background-color: #fff !important;
   }
 
@@ -8683,7 +8685,7 @@ h3 {
     border-color: #dee2e6;
   }
 
-  .table .thead-dark th {
+  .table .thead-dark th, .jsgrid-table .thead-dark th {
     color: inherit;
     border-color: #dee2e6;
   }
@@ -8713,6 +8715,46 @@ h3 {
   color: #2699FB;
   font-size: 21px;
   font-weight: bold;
+}
+.jsgrid {
+  border: 2px solid #2699FB;
+  font-size: 1rem !important;
+  height: 100% !important;
+}
+.jsgrid * {
+  color: #2699FB;
+}
+.jsgrid .jsgrid-grid-header,
+.jsgrid .jsgrid-grid-body {
+  overflow: hidden !important;
+}
+.jsgrid .jsgrid-grid-header .jsgrid-table,
+.jsgrid .jsgrid-grid-body .jsgrid-table {
+  margin-bottom: 0;
+}
+
+.jsgrid-table th {
+  padding: 0.75rem 0 !important;
+}
+.jsgrid-table .jsgrid-header-row {
+  border-bottom: 2px solid #2699FB;
+  text-align: center;
+}
+.jsgrid-table .jsgrid-header-row .jsgrid-header-cell {
+  border: none;
+  background-color: white;
+}
+.jsgrid-table .jsgrid-row.checked,
+.jsgrid-table .jsgrid-alt-row.checked {
+  background-color: #BCE0FD;
+}
+.jsgrid-table .jsgrid-cell {
+  border: none;
+  text-align: left;
+  border-top: 1px solid #BCE0FD;
+}
+.jsgrid-table .jsgrid-cell.cell-centered {
+  text-align: center !important;
 }
 
 /*# sourceMappingURL=styles.css.map */
